@@ -75,7 +75,7 @@
   if(!isset($_SESSION['sid']) && !isset($_SESSION['user']) && !isset($_SESSION['id']) ){
 
     $user = trim($_POST['txtName']);
-    $pass = trim($_POST['txtPassword']);
+    $pass = isset($_POST['txtPassword']) ? trim($_POST['txtPassword']):'';
 
     if($user != "" && $pass !=""){
 

@@ -59,7 +59,7 @@ class CR3DCQuery{
     $this->SiteURL = $conf['site_url'];
     $this->SiteName = $conf['site_name'];
     $this->RegistrationEmail = $conf['registration_email'];
-    if(!defined(CONNECTED)) {
+    if(!defined('CONNECTED')) {
       $this->link = mysql_connect($this->host, $this->user, $this->pass);
       mysql_select_db($this->dbnm);
       define('CONNECTED',1);
@@ -74,7 +74,7 @@ class CR3DCQuery{
 
     if($num != 0){
 
-      $name = mysql_result($return,$i,"name");
+      $name = mysql_result($return, 0,"name");
 
     }
 

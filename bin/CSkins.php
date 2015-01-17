@@ -70,7 +70,7 @@ class CSkins{
     $num = mysql_numrows($return);
 
     if($num != 0){
-      $name = mysql_result($return,$i,"name");
+      $name = mysql_result($return,0,"name");
     }
 
     return $name;

@@ -387,7 +387,7 @@
       }
       
       // call this method statically
-      function Validate($sUserCode, $bCaseInsensitive = true) {
+      static function Validate($sUserCode, $bCaseInsensitive = true) {
          if ($bCaseInsensitive) {
             $sUserCode = strtoupper($sUserCode);
          }
