@@ -57,9 +57,9 @@
   require($Root_Path."includes/language.php");
 
   $user = trim($_POST['txtName']);
-  $pass = trim($_POST['txtPassword']);
-  $languagefile = trim($_POST['slctlanguage']);
-  $chkAutoLogin = trim($_POST['chkAutoLogin']);
+  $pass = isset($_POST['txtPassword']) ? trim($_POST['txtPassword']):'';;
+  $languagefile = isset($_POST['slctlanguage']) ? trim($_POST['txtPassword']):'';;
+  $chkAutoLogin = isset($_POST['chkAutoLogin']) ? trim($_POST['chkAutoLogin']):'';;
 
   //////////////////////////////////////////////////////////////
   //Instantiate the Classes

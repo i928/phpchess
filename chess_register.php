@@ -220,7 +220,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 <link rel="stylesheet" href="<?php echo $Root_Path."skins/".$SkinName."/";?>layout.css" type="text/css">
-<?php include($Root_Path."includes/javascript.php");?>
+<?php
+$RandName1 = md5(time().rand(0, 10000000));
+$RandName2 = md5(time().rand(0, 10000000));
+include($Root_Path."includes/javascript.php");?>
 
 </head>
 <body>
